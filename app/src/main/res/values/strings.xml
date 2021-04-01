@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">registro</string>
+    <string name="EdtHelper">Obligatorio</string>
+    <string name="EdtHelper2">Opcional</string>
+</resources>

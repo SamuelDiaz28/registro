@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@color/primaryColor"/>
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_wave"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@id/viewTop"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/imgCellPhone"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_undraw_splash"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:id="@+id/linLayoutEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wave"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBarSplash"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/primaryLightColor"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtLoading"
+            android:layout_below="@+id/wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Cargando"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
